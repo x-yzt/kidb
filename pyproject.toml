@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+authors = [
+  {name = "xyzt_", email = "xyzt@psychonaut.fr"},
+]
+maintainers = [
+  {name = "xyzt_", email = "xyzt@psychonaut.fr"},
+]
+description = "Binding affinity database, as a service."
+name = "kidb"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "0.1.0"
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "pandas",
+  "sanic",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pylint",
+]
